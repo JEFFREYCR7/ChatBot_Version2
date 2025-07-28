@@ -43,6 +43,7 @@ brew install ollama
 # 运行你喜欢的模型（例如 Qwen3）
 ollama run qwen:latest
 ```
+
 模型选择（根据用户Ollama所下载的模型）
 <p align="center">
 <img width="788" height="324" alt="截屏2025-07-29 02 07 08" src="https://github.com/user-attachments/assets/a3264318-1b5f-4b00-b828-d95636a340a2" />
@@ -62,6 +63,7 @@ Markdown格式
 <p align="center">
 <img width="1512" height="944" alt="截屏2025-07-29 02 11 27" src="https://github.com/user-attachments/assets/f8d18619-6310-404b-b7ae-5c7b11065c50" width="200"/>
  </p>
+ 
 ```
 示例展示
 # 微积分基础知识笔记
