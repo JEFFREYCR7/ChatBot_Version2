@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DC1132B2C5E14BD002D583C /* NextJET_LLM_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1132A2C5E14BD002D583C /* NextJET_LLM_AppApp.swift */; };
+		3DC1132F2C5E14BE002D583C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC1132E2C5E14BE002D583C /* Assets.xcassets */; };
+		3DC113322C5E14BE002D583C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC113312C5E14BE002D583C /* Preview Assets.xcassets */; };
+		3DC1133B2C5E155E002D583C /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1133A2C5E155E002D583C /* AppView.swift */; };
+		3DC1133E2C5E1711002D583C /* OllamaKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3DC1133D2C5E1711002D583C /* OllamaKit */; };
+		3DC113442C5E18DE002D583C /* Highlightr in Frameworks */ = {isa = PBXBuildFile; productRef = 3DC113432C5E18DE002D583C /* Highlightr */; };
+		3DC113472C5E1997002D583C /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 3DC113462C5E1997002D583C /* Sparkle */; };
+		3DC1134A2C5E19EF002D583C /* NetworkImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3DC113492C5E19EF002D583C /* NetworkImage */; };
+		3DC113502C5E1A9A002D583C /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3DC1134F2C5E1A9A002D583C /* MarkdownUI */; };
+		3DC113532C5E1ADD002D583C /* ViewCondition in Frameworks */ = {isa = PBXBuildFile; productRef = 3DC113522C5E1ADD002D583C /* ViewCondition */; };
+		3DC113672C5E9307002D583C /* ViewState in Frameworks */ = {isa = PBXBuildFile; productRef = 3DC113662C5E9307002D583C /* ViewState */; };
+		3DC8F4992C60AB0E00883711 /* AppUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8F4982C60AB0E00883711 /* AppUpdater.swift */; };
+		3DC8F49E2C60B40300883711 /* AddChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8F49D2C60B40300883711 /* AddChatView.swift */; };
+		3DC8F4A12C60B80D00883711 /* AppMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8F4A02C60B80D00883711 /* AppMessages.swift */; };
+		3DC8F4A32C60BCB400883711 /* ChatSidebarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8F4A22C60BCB400883711 /* ChatSidebarListView.swift */; };
+		3DC8F4A62C60BEA500883711 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8F4A52C60BEA500883711 /* MessageView.swift */; };
+		3DC8F4A92C60C37A00883711 /* ChatContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8F4A82C60C37A00883711 /* ChatContextMenu.swift */; };
+		3DC8F4B02C60CC5000883711 /* CoreExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 3DC8F4AF2C60CC5000883711 /* CoreExtensions */; };
+		3DC8F4B22C60CC5600883711 /* CoreViewModels in Frameworks */ = {isa = PBXBuildFile; productRef = 3DC8F4B12C60CC5600883711 /* CoreViewModels */; };
+		3DC8F4B42C60CC6500883711 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 3DC8F4B32C60CC6500883711 /* Defaults */; };
+		3DC8F4B62C60CC6900883711 /* SettingsModule in Frameworks */ = {isa = PBXBuildFile; productRef = 3DC8F4B52C60CC6900883711 /* SettingsModule */; };
+		3DC8F4B82C60CC7800883711 /* CoreModels in Frameworks */ = {isa = PBXBuildFile; productRef = 3DC8F4B72C60CC7800883711 /* CoreModels */; };
+		3DC8F4BB2C60CF5300883711 /* MessageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8F4BA2C60CF5300883711 /* MessageCellView.swift */; };
+		3DC8F4BD2C60DD2300883711 /* CodeHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8F4BC2C60DD2300883711 /* CodeHighlighter.swift */; };
+		3DC8F4C02C60E4AA00883711 /* TextError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8F4BF2C60E4AA00883711 /* TextError.swift */; };
+		3DC8F4C22C61365A00883711 /* MessageCellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8F4C12C61365A00883711 /* MessageCellHeader.swift */; };
+		3DC8F4C42C6137B100883711 /* MessageCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8F4C32C6137B100883711 /* MessageCellContent.swift */; };
+		3DC8F4C62C61408900883711 /* MessageCellFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8F4C52C61408900883711 /* MessageCellFooter.swift */; };
+		3DEF23102C61C7AB00A06B62 /* RenameChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEF230F2C61C7AB00A06B62 /* RenameChatView.swift */; };
+		3DEF23132C61CE2200A06B62 /* ChatField in Frameworks */ = {isa = PBXBuildFile; productRef = 3DEF23122C61CE2200A06B62 /* ChatField */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3DC113272C5E14BD002D583C /* NextJET_LLM_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextJET_LLM_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC1132A2C5E14BD002D583C /* NextJET_LLM_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextJET_LLM_AppApp.swift; sourceTree = "<group>"; };
+		3DC1132E2C5E14BE002D583C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DC113312C5E14BE002D583C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3DC113332C5E14BE002D583C /* NextJET_LLM_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NextJET_LLM_App.entitlements; sourceTree = "<group>"; };
+		3DC1133A2C5E155E002D583C /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		3DC1135A2C5E2647002D583C /* CoreExtensions */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CoreExtensions; sourceTree = "<group>"; };
+		3DC1135F2C5E2EF9002D583C /* CoreModels */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CoreModels; sourceTree = "<group>"; };
+		3DC113642C5E703A002D583C /* CoreViewModels */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CoreViewModels; sourceTree = "<group>"; };
+		3DC8F4982C60AB0E00883711 /* AppUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdater.swift; sourceTree = "<group>"; };
+		3DC8F49B2C60AE3E00883711 /* SettingsModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SettingsModule; sourceTree = "<group>"; };
+		3DC8F49D2C60B40300883711 /* AddChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChatView.swift; sourceTree = "<group>"; };
+		3DC8F4A02C60B80D00883711 /* AppMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMessages.swift; sourceTree = "<group>"; };
+		3DC8F4A22C60BCB400883711 /* ChatSidebarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSidebarListView.swift; sourceTree = "<group>"; };
+		3DC8F4A52C60BEA500883711 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		3DC8F4A82C60C37A00883711 /* ChatContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContextMenu.swift; sourceTree = "<group>"; };
+		3DC8F4BA2C60CF5300883711 /* MessageCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCellView.swift; sourceTree = "<group>"; };
+		3DC8F4BC2C60DD2300883711 /* CodeHighlighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeHighlighter.swift; sourceTree = "<group>"; };
+		3DC8F4BF2C60E4AA00883711 /* TextError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextError.swift; sourceTree = "<group>"; };
+		3DC8F4C12C61365A00883711 /* MessageCellHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCellHeader.swift; sourceTree = "<group>"; };
+		3DC8F4C32C6137B100883711 /* MessageCellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCellContent.swift; sourceTree = "<group>"; };
+		3DC8F4C52C61408900883711 /* MessageCellFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCellFooter.swift; sourceTree = "<group>"; };
+		3DEF230F2C61C7AB00A06B62 /* RenameChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameChatView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DC113242C5E14BD002D583C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC113502C5E1A9A002D583C /* MarkdownUI in Frameworks */,
+				3DC8F4B62C60CC6900883711 /* SettingsModule in Frameworks */,
+				3DC1133E2C5E1711002D583C /* OllamaKit in Frameworks */,
+				3DC8F4B22C60CC5600883711 /* CoreViewModels in Frameworks */,
+				3DC113472C5E1997002D583C /* Sparkle in Frameworks */,
+				3DC113442C5E18DE002D583C /* Highlightr in Frameworks */,
+				3DC8F4B42C60CC6500883711 /* Defaults in Frameworks */,
+				3DEF23132C61CE2200A06B62 /* ChatField in Frameworks */,
+				3DC113672C5E9307002D583C /* ViewState in Frameworks */,
+				3DC8F4B02C60CC5000883711 /* CoreExtensions in Frameworks */,
+				3DC1134A2C5E19EF002D583C /* NetworkImage in Frameworks */,
+				3DC8F4B82C60CC7800883711 /* CoreModels in Frameworks */,
+				3DC113532C5E1ADD002D583C /* ViewCondition in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D3E9C5A2C5F1B01005D9D4B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3DC1132A2C5E14BD002D583C /* NextJET_LLM_AppApp.swift */,
+				3DC8F4982C60AB0E00883711 /* AppUpdater.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3DC1131E2C5E14BD002D583C = {
+			isa = PBXGroup;
+			children = (
+				3DC8F49B2C60AE3E00883711 /* SettingsModule */,
+				3DC113642C5E703A002D583C /* CoreViewModels */,
+				3DC1135F2C5E2EF9002D583C /* CoreModels */,
+				3DC1135A2C5E2647002D583C /* CoreExtensions */,
+				3DC113292C5E14BD002D583C /* NextJET_LLM_App */,
+				3DC113282C5E14BD002D583C /* Products */,
+				3DC8F4AA2C60CB6400883711 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DC113282C5E14BD002D583C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DC113272C5E14BD002D583C /* NextJET_LLM_App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DC113292C5E14BD002D583C /* NextJET_LLM_App */ = {
+			isa = PBXGroup;
+			children = (
+				3DC8F4A72C60BFEE00883711 /* Resources */,
+				3DC8F49F2C60B7F200883711 /* Utils */,
+				3D3E9C5A2C5F1B01005D9D4B /* App */,
+				3DC113392C5E1515002D583C /* Views */,
+				3DC113302C5E14BE002D583C /* Preview Content */,
+			);
+			path = NextJET_LLM_App;
+			sourceTree = "<group>";
+		};
+		3DC113302C5E14BE002D583C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3DC113312C5E14BE002D583C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3DC113392C5E1515002D583C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3DC8F4BE2C60E49900883711 /* Commons */,
+				3DC8F4B92C60CF3000883711 /* Subviews */,
+				3DC8F4A42C60BE8B00883711 /* MessageViews */,
+				3DC8F49C2C60B2EF00883711 /* ChatViews */,
+				3DC1133A2C5E155E002D583C /* AppView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3DC8F49C2C60B2EF00883711 /* ChatViews */ = {
+			isa = PBXGroup;
+			children = (
+				3DC8F49D2C60B40300883711 /* AddChatView.swift */,
+				3DC8F4A22C60BCB400883711 /* ChatSidebarListView.swift */,
+				3DC8F4A82C60C37A00883711 /* ChatContextMenu.swift */,
+				3DEF230F2C61C7AB00A06B62 /* RenameChatView.swift */,
+			);
+			path = ChatViews;
+			sourceTree = "<group>";
+		};
+		3DC8F49F2C60B7F200883711 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3DC8F4A02C60B80D00883711 /* AppMessages.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3DC8F4A42C60BE8B00883711 /* MessageViews */ = {
+			isa = PBXGroup;
+			children = (
+				3DC8F4A52C60BEA500883711 /* MessageView.swift */,
+			);
+			path = MessageViews;
+			sourceTree = "<group>";
+		};
+		3DC8F4A72C60BFEE00883711 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3DC113332C5E14BE002D583C /* NextJET_LLM_App.entitlements */,
+				3DC1132E2C5E14BE002D583C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3DC8F4AA2C60CB6400883711 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DC8F4B92C60CF3000883711 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				3DC8F4BA2C60CF5300883711 /* MessageCellView.swift */,
+				3DC8F4BC2C60DD2300883711 /* CodeHighlighter.swift */,
+				3DC8F4C12C61365A00883711 /* MessageCellHeader.swift */,
+				3DC8F4C32C6137B100883711 /* MessageCellContent.swift */,
+				3DC8F4C52C61408900883711 /* MessageCellFooter.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		3DC8F4BE2C60E49900883711 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				3DC8F4BF2C60E4AA00883711 /* TextError.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DC113262C5E14BD002D583C /* NextJET_LLM_App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC113362C5E14BE002D583C /* Build configuration list for PBXNativeTarget "NextJET_LLM_App" */;
+			buildPhases = (
+				3DC113232C5E14BD002D583C /* Sources */,
+				3DC113242C5E14BD002D583C /* Frameworks */,
+				3DC113252C5E14BD002D583C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NextJET_LLM_App;
+			packageProductDependencies = (
+				3DC1133D2C5E1711002D583C /* OllamaKit */,
+				3DC113432C5E18DE002D583C /* Highlightr */,
+				3DC113462C5E1997002D583C /* Sparkle */,
+				3DC113492C5E19EF002D583C /* NetworkImage */,
+				3DC1134F2C5E1A9A002D583C /* MarkdownUI */,
+				3DC113522C5E1ADD002D583C /* ViewCondition */,
+				3DC113662C5E9307002D583C /* ViewState */,
+				3DC8F4AF2C60CC5000883711 /* CoreExtensions */,
+				3DC8F4B12C60CC5600883711 /* CoreViewModels */,
+				3DC8F4B32C60CC6500883711 /* Defaults */,
+				3DC8F4B52C60CC6900883711 /* SettingsModule */,
+				3DC8F4B72C60CC7800883711 /* CoreModels */,
+				3DEF23122C61CE2200A06B62 /* ChatField */,
+			);
+			productName = NextJET_LLM_App;
+			productReference = 3DC113272C5E14BD002D583C /* NextJET_LLM_App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DC1131F2C5E14BD002D583C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					3DC113262C5E14BD002D583C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 3DC113222C5E14BD002D583C /* Build configuration list for PBXProject "NextJET_LLM_App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DC1131E2C5E14BD002D583C;
+			packageReferences = (
+				3DC1133C2C5E1711002D583C /* XCRemoteSwiftPackageReference "OllamaKit" */,
+				3DC113422C5E18DE002D583C /* XCRemoteSwiftPackageReference "Highlightr" */,
+				3DC113452C5E1997002D583C /* XCRemoteSwiftPackageReference "Sparkle" */,
+				3DC113482C5E19EF002D583C /* XCRemoteSwiftPackageReference "NetworkImage" */,
+				3DC1134E2C5E1A9A002D583C /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+				3DC113512C5E1ADD002D583C /* XCRemoteSwiftPackageReference "ViewCondition" */,
+				3DC1135C2C5E2CD2002D583C /* XCRemoteSwiftPackageReference "Defaults" */,
+				3DC113652C5E9307002D583C /* XCRemoteSwiftPackageReference "ViewState" */,
+				3DEF23112C61CE2200A06B62 /* XCRemoteSwiftPackageReference "ChatField" */,
+			);
+			productRefGroup = 3DC113282C5E14BD002D583C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DC113262C5E14BD002D583C /* NextJET_LLM_App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DC113252C5E14BD002D583C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC113322C5E14BE002D583C /* Preview Assets.xcassets in Resources */,
+				3DC1132F2C5E14BE002D583C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DC113232C5E14BD002D583C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC8F4992C60AB0E00883711 /* AppUpdater.swift in Sources */,
+				3DC8F49E2C60B40300883711 /* AddChatView.swift in Sources */,
+				3DC8F4A92C60C37A00883711 /* ChatContextMenu.swift in Sources */,
+				3DC8F4A12C60B80D00883711 /* AppMessages.swift in Sources */,
+				3DC8F4A32C60BCB400883711 /* ChatSidebarListView.swift in Sources */,
+				3DC8F4BB2C60CF5300883711 /* MessageCellView.swift in Sources */,
+				3DC8F4C62C61408900883711 /* MessageCellFooter.swift in Sources */,
+				3DEF23102C61C7AB00A06B62 /* RenameChatView.swift in Sources */,
+				3DC8F4BD2C60DD2300883711 /* CodeHighlighter.swift in Sources */,
+				3DC1133B2C5E155E002D583C /* AppView.swift in Sources */,
+				3DC8F4C22C61365A00883711 /* MessageCellHeader.swift in Sources */,
+				3DC8F4C02C60E4AA00883711 /* TextError.swift in Sources */,
+				3DC8F4A62C60BEA500883711 /* MessageView.swift in Sources */,
+				3DC1132B2C5E14BD002D583C /* NextJET_LLM_AppApp.swift in Sources */,
+				3DC8F4C42C6137B100883711 /* MessageCellContent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3DC113342C5E14BE002D583C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DC113352C5E14BE002D583C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		3DC113372C5E14BE002D583C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NextJET_LLM_App/NextJET_LLM_App.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NextJET_LLM_App/Preview Content\"";
+				DEVELOPMENT_TEAM = KGAJ28KNFF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NextJET.NextJET-LLM-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3DC113382C5E14BE002D583C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NextJET_LLM_App/NextJET_LLM_App.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NextJET_LLM_App/Preview Content\"";
+				DEVELOPMENT_TEAM = KGAJ28KNFF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NextJET.NextJET-LLM-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DC113222C5E14BD002D583C /* Build configuration list for PBXProject "NextJET_LLM_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC113342C5E14BE002D583C /* Debug */,
+				3DC113352C5E14BE002D583C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC113362C5E14BE002D583C /* Build configuration list for PBXNativeTarget "NextJET_LLM_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC113372C5E14BE002D583C /* Debug */,
+				3DC113382C5E14BE002D583C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3DC1133C2C5E1711002D583C /* XCRemoteSwiftPackageReference "OllamaKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kevinhermawan/OllamaKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.4;
+			};
+		};
+		3DC113422C5E18DE002D583C /* XCRemoteSwiftPackageReference "Highlightr" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raspu/Highlightr.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.1;
+			};
+		};
+		3DC113452C5E1997002D583C /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.4;
+			};
+		};
+		3DC113482C5E19EF002D583C /* XCRemoteSwiftPackageReference "NetworkImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/NetworkImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		3DC1134E2C5E1A9A002D583C /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
+		3DC113512C5E1ADD002D583C /* XCRemoteSwiftPackageReference "ViewCondition" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kevinhermawan/ViewCondition.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.5;
+			};
+		};
+		3DC1135C2C5E2CD2002D583C /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.2.0;
+			};
+		};
+		3DC113652C5E9307002D583C /* XCRemoteSwiftPackageReference "ViewState" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kevinhermawan/ViewState.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.2;
+			};
+		};
+		3DEF23112C61CE2200A06B62 /* XCRemoteSwiftPackageReference "ChatField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kevinhermawan/ChatField.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3DC1133D2C5E1711002D583C /* OllamaKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DC1133C2C5E1711002D583C /* XCRemoteSwiftPackageReference "OllamaKit" */;
+			productName = OllamaKit;
+		};
+		3DC113432C5E18DE002D583C /* Highlightr */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DC113422C5E18DE002D583C /* XCRemoteSwiftPackageReference "Highlightr" */;
+			productName = Highlightr;
+		};
+		3DC113462C5E1997002D583C /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DC113452C5E1997002D583C /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+		3DC113492C5E19EF002D583C /* NetworkImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DC113482C5E19EF002D583C /* XCRemoteSwiftPackageReference "NetworkImage" */;
+			productName = NetworkImage;
+		};
+		3DC1134F2C5E1A9A002D583C /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DC1134E2C5E1A9A002D583C /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+		3DC113522C5E1ADD002D583C /* ViewCondition */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DC113512C5E1ADD002D583C /* XCRemoteSwiftPackageReference "ViewCondition" */;
+			productName = ViewCondition;
+		};
+		3DC113662C5E9307002D583C /* ViewState */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DC113652C5E9307002D583C /* XCRemoteSwiftPackageReference "ViewState" */;
+			productName = ViewState;
+		};
+		3DC8F4AF2C60CC5000883711 /* CoreExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreExtensions;
+		};
+		3DC8F4B12C60CC5600883711 /* CoreViewModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreViewModels;
+		};
+		3DC8F4B32C60CC6500883711 /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DC1135C2C5E2CD2002D583C /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
+		3DC8F4B52C60CC6900883711 /* SettingsModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SettingsModule;
+		};
+		3DC8F4B72C60CC7800883711 /* CoreModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreModels;
+		};
+		3DEF23122C61CE2200A06B62 /* ChatField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DEF23112C61CE2200A06B62 /* XCRemoteSwiftPackageReference "ChatField" */;
+			productName = ChatField;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3DC1131F2C5E14BD002D583C /* Project object */;
+}
